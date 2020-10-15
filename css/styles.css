@@ -1,0 +1,31 @@
+body{
+
+    background-color: aqua;
+}
+@keyframes example {
+    0% {transform: rotate(40deg); left: 10px; top: 10px;}
+    20% {transform: rotate(40deg);left: 600px; top: 900px;}
+    25% {transform: rotateY(180deg);left: 600px; top: 900px;}
+    50%{transform: rotateY(180deg);left: 10px; top: 900px}
+    55%{transform: rotate(-45deg);left: 10px; top: 900px}
+    75%{transform: rotate(-45deg);left: 600px; top: 10px;}
+    80%{transform: rotateY(180deg);left: 600px; top: 10px;}
+    95% {transform: rotateY(180deg); left: 10px; top: 10px;}
+    100% {transform: rotate(40deg);left: 10px; top: 10px;}
+}
+div{
+    animation-name: example;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    background-image: url(/media/nyan.png);
+    background-size: cover;
+    width: 160px;
+    height: 44px;
+    position: relative;
+}
+.kitty{
+    width: 200px;
+}
+.kitty:hover{
+    opacity: 50%;
+}
